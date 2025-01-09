@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Master - Global Chat</title>
+    <link rel="stylesheet" href="/css/chat.css">
+    <script defer src="http://localhost:<%= port%>/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <audio src="/sound/sound.mp3" class="hidden" id="recive-message-sound"></audio>
+    <div class="chat-container">
+        <button class="toggle-users">Users</button>
+        <div class="user-list">
+            <div class="user-list-header">
+                <h2>Active Users</h2>
+                <button class="close-users">×</button>
+            </div>
+        </div>
+        <div class="chat-area">
+            <div class="chat-header">
+                <h2>Chat Master</h2>
+            </div>
+            <div class="chat-messages">
+                <%messages.forEach((message)=>{%>
+                    <%if(message.user._id.toString() !== user._id.toString()){%>
+                        <div class="message-container received">
+                            <div class="message-sender"><%=message.user.name %></div>
+                            <div class="message received">
+                                <%= message.content%>
+                            </div>
+                        </div>
+                    <%}else{%>
+                        <div class="message-container sent">
+                            <div class="message-sender">You</div>
+                            <div class="message sent">
+                                <%= message.content%>
+                            </div>
+                        </div>
+                <% }}) %>
+            </div>
+            <div class="chat-input">
+                <form action="/send/chat/message/<%= user._id%>" method="post" id="message-box">
+                    <input type="text" placeholder="Type your message..." id="message" name="message">
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.USER_DATA = {
+        name: <%- JSON.stringify(user.name) %>,
+        avatar: <%- JSON.stringify(user.avatar) %>
+    };
+    window.PORT = {
+        port:<%- JSON.stringify(port) %>
+    };
+    </script>
+    <script defer src="/js/chat.js"></script>
+</body>
+</html>

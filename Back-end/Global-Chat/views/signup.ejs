@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>login</title>
+    <link rel="stylesheet" href="/css/index-CpNesyaI.css">
+</head>
+
+<body>
+    <div id="w-full">
+        <% if(err.length>0){%>
+            <div id="error">
+                <p>
+                    <%=err%>
+                </p>
+            </div>
+            <% } %>
+    </div>
+    <body class="flex items-center justify-center
+              min-h-screen bg-gray-200">
+        <div class="main bg-white rounded-lg shadow-md p-10 
+    transition-transform w-96 text-center">
+            <h1 class="text-green-600 text-3xl">
+                Chat Mater
+            </h1>
+            <h3 class="text-lg">
+                Enter your credentials
+            </h3>
+            <form action="/send/signup" id="valid-form" method="post">
+                <label for="first" class="block mt-4 mb-2 text-left text-gray-700 font-bold">Username:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your Username" class="block w-full mb-6 px-4 py-2 border
+                border-gray-300 rounded-md focus:outline-none
+                 focus:border-green-400" required>
+
+                 <label for="avatar" class="block mt-4 mb-2 text-left text-gray-700 font-bold">avatar:</label>
+                 <input type="text" id="avatar" name="avatar" placeholder="Enter your avatar name" class="block w-full mb-6 px-4 py-2 border
+                 border-gray-300 rounded-md focus:outline-none
+                  focus:border-green-400" required>
+
+                <label for="email" class="block mb-2 text-left
+             text-gray-700 font-bold">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" class="block w-full mb-6 px-4 py-2 border 
+                border-gray-300 rounded-md focus:outline-none
+                 focus:border-green-400" required>
+
+                 <label for="age" class="block mb-2 text-left
+                 text-gray-700 font-bold">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="Enter your Age" class="block w-full mb-6 px-4 py-2 border 
+                    border-gray-300 rounded-md focus:outline-none
+                     focus:border-green-400" required>
+
+                <label for="password" class="block mb-2 text-left
+             text-gray-700 font-bold">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your Password" class="block w-full mb-6 px-4 py-2 border 
+                border-gray-300 rounded-md focus:outline-none
+                 focus:border-green-400" required>
+
+                <div class="flex justify-center items-center">
+                    <button type="submit" class="bg-green-600 text-white py-3 px-6 rounded
+                    -md cursor-pointer transition-colors 
+                    duration-300 hover:bg-green-500">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>
