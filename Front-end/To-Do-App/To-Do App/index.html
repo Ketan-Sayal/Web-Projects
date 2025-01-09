@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do App</title>
+    <link rel="stylesheet" crossorigin href="/assets/index-DS5IyusS.css">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body class="h-screen">
+    <div class="container w-screen h-fit flex space-x-2">
+        <div class="w-1/2 h-full rounded-lg shadow-xl shadow-gray-400 bg-gray-200">
+            <div>
+                <h1 class="text-sm md:text-5xl mx-5 my-3 font-bold">Task List</h1>
+                <p class="mx-5 my-3 text-xs md:text-2xl">Add Tasks to your list by typing right and pressing Enter and you may can view pending task below.
+                </p>
+                <ul type="none" id="list-area">
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="flex mt-4 h-2/5">
+            <input type="text" autocomplete="off" placeholder="I need To..." class="outline-none text-xl md:text-5xl w-full font-bold h-full mx-6" id="input-box">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    justify-content: center;
+}
+
+.container img{
+    width: 233px;
+    height: 233px;
+}
+.scroll{
+    display: flex;
+    overflow: scroll;
+    height: 34%;
+    width: 31%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+}
+.scroll div{
+    display: flex;
+}
+
+.scroll::-webkit-scrollbar{
+    display: none;
+}
+
+#next img{
+    width: 60%;
+    height: 60%;
+    margin-left: 25px;
+    /* position: absolute; */
+}
+#back img{
+    width: 75%;
+    height: 60%;
+}

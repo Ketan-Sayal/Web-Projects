@@ -1,0 +1,48 @@
+ul li {
+    display: flex;
+    border: 2px solid rgb(63, 61, 61);
+    border-left: none;
+    border-right: none;
+    justify-content: space-between;
+    padding: 0.5rem 0px;
+    font-size: 0.25rem;
+}
+.red{
+    color: red;
+    background: rgb(91, 10, 10);
+}
+.border-red{
+    border: 2px solid rgb(91, 10, 10);
+}
+.border-green{
+    border: 2px solid rgb(7, 76, 3);
+}
+.green{
+    color: white;
+    background: rgb(7, 76, 3);
+}
+@media (min-width: 768px){
+ul li {
+    display: flex;
+    border: 2px solid rgb(63, 61, 61);
+    border-left: none;
+    border-right: none;
+    justify-content: space-between;
+    padding: 1.5rem 0px;
+    font-size: large;
+}
+.red{
+    color: red;
+    background: rgb(91, 10, 10);
+}
+.border-red{
+    border: 2px solid rgb(91, 10, 10);
+}
+.border-green{
+    border: 2px solid rgb(7, 76, 3);
+}
+.green{
+    color: white;
+    background: rgb(7, 76, 3);
+}
+}

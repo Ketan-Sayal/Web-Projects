@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' 'sans-serif';
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+
+}
+.questionsAndOptions{
+    background: white;
+    height: 53vmin;
+    width: 70vmin;
+    padding: 20px;
+    border-radius: 25px;
+}
+#question{
+    display: inline-block;
+    margin: 0 9px;
+}
+.answers{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: space-around;
+}
+.btn{
+    margin: 8px;
+    padding: 8px;
+    text-align: left;
+    border-radius: 10px;
+    border: none;
+    transition:all 0.3s ease-in;
+    cursor: pointer;
+}
+.next{
+    width: 63vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 28px 0;
+}
+#next{
+    padding: 14px;
+    width: 20vmin;
+    background: #000;
+    color: aliceblue;
+    border-radius: 15px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    /* font-size: 1.2rem; */
+    font-weight: bold;
+    font-size: 2.3vmin;
+    cursor: pointer;
+}
+.btn:hover:not([disabled]){
+    color: white;
+    background: #000;
+}
+#next:hover{
+    background-color: rgb(228, 228, 224);
+    color: #000;
+}
+#questionNumber{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-decoration:underline;
+}
+#dot{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.red{
+    color: rgb(235, 234, 232);
+    background-color: rgb(218, 95, 95);
+}
+.green{
+    color: rgb(235, 234, 232);
+    background-color: rgb(95, 218, 99);
+}

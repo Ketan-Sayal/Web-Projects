@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(75 12 109);
+}
+
+.container{
+    width: 25%;
+    height: 79vh;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column wrap;
+    background-color:#251784;
+    /* boder-radius: 32px; */
+    /* border: 2px solid purple; */
+    border-radius: 30px;
+    color: white;
+    font-size: 23px;
+}
+
+.check-boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin: 15px 0px; */
+    /* height: 100%; */
+    /* background-color: red; */
+    width: 84%;
+}
+
+.check-boxes div{
+    margin: 18px 0px;
+    position: relative;
+    background-color: red;
+    height: 100%;
+}
+
+.check-boxes div label{
+    position: absolute;
+    left: 0;
+    font-weight: bolder;
+}
+
+.check-boxes div input{
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 31px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+#Password{
+    width: 86%;
+    padding: 7px;
+    font-size: 2rem;
+    border-radius: 9px;
+    outline: 0;
+    border: 0;
+    /* text-align: center; */
+}
+
+h1{
+    display: flex;
+    flex-direction: column;
+}
+
+#btn{
+    padding: 17px;
+    background-color: blue;
+    color: white;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+}
+
+#image{
+    position: absolute;
+    top: 265px;
+    width: 3%;
+    right: 604px;
+    cursor: pointer;
+}

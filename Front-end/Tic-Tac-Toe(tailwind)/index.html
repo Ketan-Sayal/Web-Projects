@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" crossorigin href="/assets/index-CJolnmts.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="w-full h-full m-auto hidden justify-center items-center flex-col space-y-8 mt-20" id="msgContainer">
+        <p id="msg" class="text-lg md:text-3xl font-bold">Result: O wins</p>
+        <button id="playAgain" class="w-32 h-12 bg-black outline-none text-white rounded-xl font-bold">Play Again</button>
+    </div>
+    <div class="game my-6">
+        <div class="box flex space-x-1 md:space-x-2 justify-center my-1 md:my-2">
+            <button class="btn overflow-hidden h-12 w-12 md:w-32 shadow-xl shadow-gray-500  md:h-32 bg-blue-200 md:rounded-xl rounded-md md:text-6xl text-3xl"></button>
+            <button class="btn overflow-hidden h-12 w-12 md:w-32 shadow-xl shadow-gray-500  md:h-32 bg-blue-200 md:rounded-xl rounded-md md:text-6xl text-3xl"></button>
+            <button class="btn overflow-hidden h-12 w-12 md:w-32 shadow-xl shadow-gray-500  md:h-32 bg-blue-200 md:rounded-xl rounded-md md:text-6xl text-3xl"></button>
+        </div>
+        
+        <div class="box flex space-x-1 md:space-x-2 justify-center my-1 md:my-2">
+            <button class="btn overflow-hidden h-12 w-12 md:w-32 shadow-xl shadow-gray-500  md:h-32 bg-blue-200 md:rounded-xl rounded-md md:text-6xl text-3xl"></button>
+            <button class="btn overflow-hidden h-12 w-12 md:w-32 shadow-xl shadow-gray-500  md:h-32 bg-blue-200 md:rounded-xl rounded-md md:text-6xl text-3xl"></button>
+            <button class="btn overflow-hidden h-12 w-12 md:w-32 shadow-xl shadow-gray-500  md:h-32 bg-blue-200 md:rounded-xl rounded-md md:text-6xl text-3xl"></button>
+        </div>
+    
+        <div class="box flex space-x-1 md:space-x-2 justify-center my-1 md:my-2">
+            <button class="btn overflow-hidden h-12 w-12 md:w-32 shadow-xl shadow-gray-500  md:h-32 bg-blue-200 md:rounded-xl rounded-md md:text-6xl text-3xl"></button>
+            <button class="btn overflow-hidden h-12 w-12 md:w-32 shadow-xl shadow-gray-500  md:h-32 bg-blue-200 md:rounded-xl rounded-md md:text-6xl text-3xl"></button>
+            <button class="btn overflow-hidden h-12 w-12 md:w-32 shadow-xl shadow-gray-500  md:h-32 bg-blue-200 md:rounded-xl rounded-md md:text-6xl text-3xl"></button>
+        </div>
+    </div>
+    <div class="w-full h-full flex justify-center"><button id="reset" class="w-32 h-12 bg-black outline-none text-white rounded-xl font-bold">Reset</button></div>
+    <script src="script.js"></script>
+</body>
+</html>

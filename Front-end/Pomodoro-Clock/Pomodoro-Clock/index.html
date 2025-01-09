@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Clock</title>
+
+  <link rel="stylesheet" crossorigin href="/assets/index-_DiSMOsW.css">
+</head>
+
+<body class="flex items-center justify-center h-screen bg-gray-100">
+
+    <div class="container bg-gray-800 bg-opacity-80 rounded-lg shadow-lg w-56 h-96 flex flex-col justify-between p-4">
+
+        <div class="countdown bg-gray-900 text-white text-4xl text-center py-8 rounded-lg" id="time">
+            00:00
+        </div>
+
+        <div class="flex flex-col space-y-4">
+
+            <div class="flex flex-col items-center">
+                <span class="text-white text-lg" id="sessionCount">Session 1</span>
+                <div class="flex items-center space-x-4 mt-2">
+                    <button  class="bg-gray-700 text-white px-2 py-1 rounded" id="minus1">-</button>
+                    <span  class="text-white text-2xl" id="sessionLength">0</span>
+                    <button class="bg-gray-700 text-white px-2 py-1 rounded" id="add1">+</button>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <span class="text-white text-lg">Break Time</span>
+                <div class="flex items-center space-x-4 mt-2">
+                    <button id="minus2" class="bg-gray-700 text-white px-2 py-1 rounded">-</button>
+                    <span class="text-white text-2xl" id="breakLength">0</span>
+                    <button class="bg-gray-700 text-white px-2 py-1 rounded" id="add2">+</button>
+                </div>
+            </div>
+
+            <div class="flex justify-between mt-4">
+                <button id="start" class="bg-green-500 text-white w-20 py-2 rounded">Start</button>
+                <button id="reset" class="bg-red-500 text-white w-20 py-2 rounded">Reset</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
