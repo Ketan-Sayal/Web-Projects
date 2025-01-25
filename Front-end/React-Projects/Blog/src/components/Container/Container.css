@@ -1,0 +1,11 @@
+.innerContainer{
+    padding: 0px 13px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .innerContainer{
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+}

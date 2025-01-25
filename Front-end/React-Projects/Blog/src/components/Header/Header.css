@@ -1,0 +1,38 @@
+#header::before{
+    position: absolute;
+    content: '';
+    z-index: -1;
+    height: 100%;
+    width: 97%;
+    background-image: url('../../assets/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: top; */
+    border-radius: 8px;
+    top: 13px;
+}
+
+@media (min-width: 1022px){
+    #header::before{
+        background-position: bottom;
+    }
+}
+
+@media  (min-width: 1496px) {
+    #header::before{
+        width: 97.3%;
+    }
+}
+
+/* @media (max-width: 760px){
+    #header::before{
+        width: 100%;
+    }
+} */
+
+@media screen and (max-width: 768px){
+    #header::before{
+        top: 0px;
+        width: 100%;
+    }
+}
