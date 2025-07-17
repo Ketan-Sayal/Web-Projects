@@ -8,10 +8,10 @@ async function fetchDataOfEmail(email){
 module.exports.isEmailValid = async (email)=>{
     let result = await fetchDataOfEmail(email);
     let format_valid = result.format_valid;
-    let state = result.state;
-    let domain = result.domain;
-    if(format_valid && state!=="undeliverable" && domain!=="gmail.co"){
-        return true;
-    }
-    return false;
+    // let state = result.state;
+    // let domain = result.domain;
+    // console.log(format_valid);
+    
+    
+    return format_valid;
 }
